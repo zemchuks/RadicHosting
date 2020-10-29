@@ -1,4 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap'); */
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato'), url('../font/Lato/Lato-Light.ttf') format('truetype');
+  }
+
+/* Global Styles */
+:root {
+    --primary-color: #047AED;
+    --dark-color: #333333;
+    --light-color: #b9b6b69b;
+    --danger-color: #dc3545;
+    --success-color: #28a745;
+    --header-color: #047AED;
+}
 
 * {
     box-sizing: border-box;
@@ -22,7 +37,8 @@ a {
     color: #333;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-weight: 300;
     line-height: 1.2;
     margin: 10px 0;
@@ -35,19 +51,18 @@ p {
 img {
     width: 100%;
 }
+
 /* ******End of Base Styling************ */
 
+/* ***Navbar Styling**** */
 .navbar {
-    background-color: #047aed;
+    background-color: var(--primary-color);
     color: white;
     height: 70px;
 }
 
 .navbar .flex {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 100%;
 }
 
 .navbar ul {
@@ -63,9 +78,54 @@ img {
 .navbar a:hover {
     border-bottom: 3px #fff solid;
 }
+/* ******** End of NavBar Styling  */
+
+/* Showcase */
+.showcase {
+    height: 400px;
+    background-color: var(--primary-color);
+    color: #fff;
+    position: relative;
+}
+
+.showcase h1 {
+    font-size: 40px;
+}
+.showcase p {
+    margin: 20px 0;
+}
+
+.showcase .grid {
+    overflow: visible;
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+}
+
+.showcase-form {
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+    z-index: 100;
+    justify-self: flex-end;
+}
+
+.showcase-form .form-control {
+   margin: 30px 0;
+}
+
+.showcase-form input[type='text'],
+.showcase-form input[type='email'] {
+    border: 0;
+    border-bottom: 1px #b4becb solid;
+    width: 100%; 
+    padding: 3px;
+    font-size: 16px;
+    outline: none;
+}
 
 /* ***Utility classes */
-
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -80,4 +140,47 @@ img {
     height: 100%;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 3px 10px rgb(0,0,0, 0.5);
+}
+
+.btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    transition: opacity 0.2s ease-in;
+    outline: none;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+/* btn effect */
+.btn:hover {
+    transform: scale(0.95);
+}
+
 /* ***End of Utility classes */
+
