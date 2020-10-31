@@ -65,6 +65,57 @@
     transform: scale(0.96);
 }
 
+/* Colored Buttons & Background */
+.btn-primary,
+.bg-primary,
+.badge-primary,
+.alert-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.btn-secondary,
+.bg-secondary,
+.badge-secondary,
+.alert-secondary {
+  background: var(--secondary-color);
+  color: #fff;
+}
+
+.btn-dark,
+.bg-dark,
+.badge-dark,
+.alert-dark {
+  background: var(--dark-color);
+  color: #fff;
+}
+.btn-light,
+.bg-light,
+.badge-light,
+.alert-light {
+  background: var(--light-color);
+  color: #333333;
+}
+
+/* * Text styling */
+
+/* lead is for Paragraphs */
+.lead {
+    font-size: 20px;
+}
+.sm {
+    font-size: 1rem;
+}
+.md {
+    font-size: 2rem;
+}
+.lg {
+    font-size: 3rem;
+}
+.xl {
+    font-size: 4rem;
+}
+
 .text-center {
     text-align: center;
   }
@@ -75,6 +126,24 @@
   
   .text-left {
     text-align: left;
+  }
+  .text-primary {
+    color: var(--primary-color);
+  }
+  .text-secondary {
+    color: var(--secondary-color);
+  }
+  
+  .text-dark {
+    color: var(--dark-color);
+  }
+  
+  .text-success {
+    color: var(--success-color);
+  }
+  
+  .text-danger {
+    color: var(--danger-color);
   }
 
   /* **Margin For up and down - Y Axis   *** */
@@ -91,7 +160,6 @@
     margin: 4rem 0;
   }
 
-
 /* **  Margin FOr All Around - Top, bottom, left, right */
 .m-1 {
     margin: 1rem;
@@ -104,4 +172,32 @@
   }
 .m-4 {
     margin: 4rem;
+  }
+
+    /* ** Padding For up and down - Y Axis   *** */
+.py-1 {
+    padding: 1rem 0;
+  }
+.py-2 {
+    padding: 2rem 0;
+  }
+.py-3 {
+    padding: 3rem 0;
+  }
+.py-4 {
+    padding: 4rem 0;
+  }
+
+  /* **  Padding For All Around - Top, bottom, left, right */
+.p-1 {
+    padding: 1rem;
+  }
+.p-2 {
+    padding: 2rem;
+  }
+.p-3 {
+    padding: 3rem;
+  }
+.p-4 {
+    padding: 4rem;
   }
