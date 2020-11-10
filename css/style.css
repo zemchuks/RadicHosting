@@ -143,7 +143,6 @@ img {
     background-color: transparent;
     border: 1px solid #fff;
 }
-
 /* **** End of Showcase **** */
 
 
@@ -179,13 +178,14 @@ img {
     grid-row: 1 / span 2;
 }
 
-/* ** Cloud Section */
 
+/* ** Cloud Section */
 .cloud .grid {
     grid-template-columns: 4fr 3fr;
 }
 
 /* Languages */
+/* Flex wrap wraps the elements when shrinking.. making it responsive */
 .languages .flex {
     flex-wrap: wrap;
 }
@@ -201,4 +201,62 @@ img {
 
 .languages .card:hover {
     transform: translateY(-15px);
+}
+
+/* ** Features **** */
+.features-head img {
+    width: 200px;
+    justify-self: flex-end;
+}
+.features-sub-head img {
+    width: 300px;
+    justify-self: flex-end;
+}
+
+
+/*  Footer */
+
+.footer .social a {
+    margin: 1rem;
+}
+
+/*  Tablets and Under media queries */
+@media (max-width: 768px) {
+    .grid,
+    .showcase .grid,
+    .stats .grid,
+    .cli .grid,
+    .cloud .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .showcase {
+        height: auto;
+    }
+    .showcase-text {
+        text-align: center;
+        margin-top: 40px;
+    }
+    .showcase-form {
+        justify-self: center;
+        margin: auto;
+    }
+    .cli .grid > img {
+        grid-column: 1;
+        grid-row: 1;
+    }
+}
+
+/*  Mobile  */
+@media (max-width: 500px) {
+    .navbar {
+        height: 110px;
+    }
+    .navbar .flex {
+        flex-direction: column;
+    }
+    .navbar ul {
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
 }

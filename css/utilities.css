@@ -89,6 +89,16 @@
   background: var(--dark-color);
   color: #fff;
 }
+
+.btn-primary,
+.bg-primary,
+.btn-secondary,
+.bg-secondary,
+.btn-dark,
+.bg-dark a {
+ color: #fff;
+}
+
 .btn-light,
 .bg-light,
 .badge-light,
