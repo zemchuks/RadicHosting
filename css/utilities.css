@@ -1,6 +1,6 @@
 /* ***Utility classes */
 .container {
-    max-width: 1100px;
+    max-width: 1300px;
     margin: 0 auto;
     overflow: auto;
     padding: 0 40px;
@@ -130,31 +130,55 @@
     text-align: center;
   }
   
-  .text-right {
-    text-align: right;
-  }
-  
-  .text-left {
-    text-align: left;
-  }
-  .text-primary {
-    color: var(--primary-color);
-  }
-  .text-secondary {
-    color: var(--secondary-color);
-  }
-  
-  .text-dark {
-    color: var(--dark-color);
-  }
-  
-  .text-success {
-    color: var(--success-color);
-  }
-  
-  .text-danger {
-    color: var(--danger-color);
-  }
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+.text-primary {
+  color: var(--primary-color);
+}
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.text-dark {
+  color: var(--dark-color);
+}
+
+.text-success {
+  color: var(--success-color);
+}
+
+.text-danger {
+  color: var(--danger-color);
+}
+
+/* ******  Alerts ******* */
+
+.alert {
+  background-color: var(--light-color);
+  padding: 10px 20px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.alert i {
+  margin-right: 10px;
+}
+
+.alert-success {
+  background-color: var(--success-color);
+  color: white;
+}
+.alert-error {
+  background-color: var(--error-color);
+  color: #ccc;
+}
+
+
 
   /* **Margin For up and down - Y Axis   *** */
 .my-1 {
